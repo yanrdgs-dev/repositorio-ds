@@ -1,4 +1,5 @@
 # repositorio-ds
 Repositório teste 
 
--rodrigo atila
+-rodrigo atila é muito Gay
+-Gabriel Mota
