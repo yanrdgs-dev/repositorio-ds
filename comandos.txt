@@ -1,0 +1,26 @@
+COMANDOS GIT
+git status -> ver branch atual, quantos commits a frente/atrás seu repositório local está em comparação com o repositório remoto.
+
+git add <nome_do_arquivo> -> adiciona arquivo para o commit atual.
+git add . -> adiciona todos os arquivos modificados para o commit atual.
+git commit -m "<mensagem>" -> Posta o commit atual com a mensagem.
+
+git branch -> vê todas as branches atuais no repositório.
+git branch <nome_da_branch> -> cria uma branch nova.
+git checkout <nome_da_branch> -> muda a branch atual.
+git branch -d <nome_da_branch> -> deleta a branch.
+git merge <nome_da_branch> -> dá merge entre a branch atual e a branch especificada.
+
+git pull -> Puxa os commits feitos ao repositório remoto e dá merge neles com o repositório local.
+git push -> Envia os commits feitos no repositório local para o repositório remoto.
+
+FLOW DO GIT
+(na branch main): git pull
+(na branch main): git branch nova_branch
+(na branch main): git checkout nova_branch
+(na branch nova_branch): git add arquivo_novo
+(na branch nova_branch): git commit -m "mensagem contextual"
+(na branch nova_branch): git push
+(na branch nova_branch): git checkout main
+(na branch main): git merge nova_branch
+(na branch main): git push
